@@ -103,6 +103,10 @@ export class MapComponent implements OnInit{
       document.getElementById("PMInfo").style.display="none";
       document.getElementById("CSScaleModal").style.display="none";
     });
+    //IF MAP IS DOUBLE CLICKED OPEN NEW TAB (!WILL NEED TO IMPLEMENT ROUTING TO CHART DATA FOR POINT DOUBLE CLICKED)
+    map.on('dblclick', function(){
+      window.open('', "");
+    })
 
     //gets a list of sensor IDs to begin getting real time data
     this.sensorDataService.getSensorIDs().subscribe((data1: any)=>{
