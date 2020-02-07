@@ -31,6 +31,8 @@ import { HeaderBarComponent } from './header-bar/header-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //ANGULAR LOADING SPINNER MODULE
 import { Ng2LoadingSpinnerModule } from 'ng2-loading-spinner';
+//ANGULAR ROUTING MODULE
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -56,7 +58,8 @@ import { Ng2LoadingSpinnerModule } from 'ng2-loading-spinner';
       spinnerColor   : '#673ab7',
       spinnerSize    : 'xl',
       animationType  : 'scalingBars'
-    })
+    }),
+    AppRoutingModule
   ],
   bootstrap: [AppComponent]
 
